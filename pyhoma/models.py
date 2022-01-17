@@ -198,8 +198,8 @@ class Command(dict):  # type: ignore
 # pylint: disable-msg=too-many-locals
 class Event:
     __slots__ = (
-        "timestamp",
         "name",
+        "timestamp",
         "gateway_id",
         "exec_id",
         "deviceurl",
@@ -226,8 +226,8 @@ class Event:
 
     def __init__(
         self,
-        timestamp: int | None = None,
         name: EventName,
+        timestamp: int | None = None,
         setupoid: str | None = None,
         owner_key: str | None = None,
         type: int | None = None,
